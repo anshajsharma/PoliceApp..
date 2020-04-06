@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/proximanova"
+                        android:id="@+id/crime_count"
+                        android:text="Crime Number"
+                        android:textSize="22dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova"
+                android:text="Crime Type : "
+                android:id="@+id/main_crime_type"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Crime : "
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova"
+                android:id="@+id/crime_type"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="State: "
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova"
+                android:id="@+id/state"
+                android:textSize="20sp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="City/District : "
+                android:textStyle="bold"
+                android:id="@+id/district"
+                android:fontFamily="@font/proximanova"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Date of Crime : "
+                android:id="@+id/DOC"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/proximanova"
+                android:text="Full Address of Crime :  "
+
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgraedit"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Address of crime"
+                    android:textSize="18sp"
+                    android:gravity="top"
+                    android:textStyle="bold"
+                    android:id="@+id/crime_full_adress"
+
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/proximanova"
+                    android:text="Crime Rating : "
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp" />
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:stepSize="0.1"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RatingBar"
+                    android:numStars="5"
+                    android:id="@+id/rating_of_crime"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+
+                    android:textColor="#C59E3C"
+                    android:focusable="false"
+                    android:fontFamily="@font/proximanova"
+                    android:text="Case Status : "
+                    android:textSize="18sp"
+
+                    android:id="@+id/case_status"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:id="@+id/img_case_status"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/proximanova"
+                    android:text="Solved By : "
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp" />
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stepSize=".1"
+
+                    android:theme="@style/RatingBar"
+                    android:id="@+id/solved_by"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_crime"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/corner"
+        android:fontFamily="@font/proximanova"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Add new crime" />
+
+
+
+
+
+</LinearLayout>

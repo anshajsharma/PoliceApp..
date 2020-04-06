@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrounddfinal"
+    android:layout_height="match_parent"
+    tools:context=".AddNewCriminalDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/new_criminal_pic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Criminal's Name"
+                    android:id="@+id/criminal_name"
+                    android:paddingStart="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/backgraedit"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date Of Birth"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/backgraedit"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:id="@+id/DOB"
+                        android:layout_marginEnd="5dp"
+                        />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/img_DOB"
+                    android:src="@drawable/ic_today_black_24dp"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:hint="Criminal's Address"
+                        android:gravity="top"
+                        android:textStyle="bold"
+
+                        android:background="@drawable/backgraedit"
+                        android:id="@+id/address_of_criminal"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Body Mark"
+                    android:id="@+id/body_mark"
+                    android:paddingStart="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/backgraedit"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_crime_type"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Crime eg fraud,rape,murder etc"
+                    android:id="@+id/crime_type"
+                    android:paddingStart="5dp"
+                    android:textStyle="bold"
+                    android:paddingEnd="5dp"
+                    android:background="@drawable/backgraedit"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/state"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/backgraedit"
+                    android:hint="Select Crime State"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/district"
+                    android:layout_marginStart="5dp"
+                    android:paddingStart="5dp"
+                    android:background="@drawable/backgraedit"
+                    android:layout_marginEnd="5dp"
+                    android:textStyle="bold"
+                    android:hint="Select Crime District"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Crime"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:background="@drawable/backgraedit"
+                    android:id="@+id/DOC"
+                    android:paddingStart="5dp"
+                    android:textStyle="bold"
+                    android:paddingEnd="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_today_black_24dp"
+                    android:id="@+id/img_DOC"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:hint="Full Address of crime"
+                        android:gravity="top"
+                        android:id="@+id/crime_address"
+                        android:textStyle="bold"
+                        android:background="@drawable/backgraedit"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating of crime out of 5"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:textSize="22dp"
+                android:id="@+id/rating_of_crime"
+                android:paddingEnd="5dp"
+                />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_of_crime2"
+                android:layout_gravity="center_horizontal"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                android:numStars="5"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Criminal"
+                android:id="@+id/add_criminal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/corner"
+                android:padding="10dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</RelativeLayout>
